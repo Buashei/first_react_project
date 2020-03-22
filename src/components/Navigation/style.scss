@@ -1,0 +1,36 @@
+nav {
+    padding: 0 3rem;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        height: 3rem;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 24;
+        img{
+            width: 25%;
+            height: 75%;
+        }
+        li{
+            &:nth-child(1){
+                margin-left: .5rem;
+            }
+            &:nth-child(9){
+                margin-right: .5rem;
+            }
+            a{
+                text-decoration: none;
+                color: rgba(255,255,255,.8);
+                background-color: transparent;
+                padding: 1rem 1.5rem;
+                &:hover {
+                    transition: .3s;
+                    background-color: rgba(255,255,255,.2);
+                }
+            }
+        }
+    }
+}

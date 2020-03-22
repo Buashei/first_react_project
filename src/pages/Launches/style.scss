@@ -1,0 +1,119 @@
+.launches {
+    display: flex;
+    flex-direction: column;
+    select {
+        font-size: 2rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+        color: white;
+        background-color: #0A1121;
+        border: 1px solid transparent;
+        width: 25%;
+        &:focus {
+            outline: none;
+            border: 1px solid gray;
+            box-sizing: border-box;
+        }
+        option {
+            border: 1px solid gray;
+        }
+    }
+    table {
+        thead {
+            tr {
+                border-bottom: 1px solid rgba(255,255,255,.4);
+                th {
+                    text-align: left;
+                    padding: 0 1rem 1rem 1rem;
+                    p.small {
+                        font-size: .5rem;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                background-color: transparent;
+                &:hover {
+                    background-color: rgba(255,255,255,.4);
+                    transition: .3s;
+                    cursor: pointer;
+                }
+                td {
+                    vertical-align: top;
+                    padding: 1rem 1rem;
+                    &.date {
+                        white-space: pre;
+                    }
+                    img {
+                        width: 6.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.singleLaunch {
+    h1 {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    div.launch {
+        margin-bottom: 2rem;
+        padding: .3rem;
+        display: inline-block;
+    }
+    .rocket {
+		width: 8%;
+		height: 902px;
+		position: absolute;
+		top: 20rem;
+		right: 30rem;
+		}
+    p{
+        line-height: 1.5rem;
+        &.time {
+            font-size: .8rem;
+            color: gray;
+        }
+
+        &.details {
+            width: 80%;
+            font-weight: 200;
+        }
+        &.big {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+    }
+    li {
+        margin-left: 2rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+        margin: .7rem 0;
+    }
+    iframe {
+        margin: 3rem 0;
+    }
+    .link {
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 0 .5rem; 	
+            border-right: 1px solid white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .photo {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        img {
+            width: 16.5rem;
+            margin-right: 1rem;
+        }
+    }
+}

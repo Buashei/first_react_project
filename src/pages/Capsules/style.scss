@@ -1,0 +1,37 @@
+.capsules {
+    h1 {
+        font-size: 2rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+    table {
+        thead {
+            tr {
+                border-bottom: 1px solid rgba(255,255,255,.4);
+                th {
+                    text-align: left;
+                    padding: 0 1rem 1rem 1rem;
+                    p.small {
+                        font-size: .5rem;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                background-color: transparent;
+                &:hover {
+                    background-color: rgba(255,255,255,.4);
+                    transition: .3s;
+                }
+                td {
+                    vertical-align: top;
+                    padding: 1rem 1rem;
+                    &.date{
+                        white-space: pre;
+                    }
+                }
+            }
+        }
+    }
+}

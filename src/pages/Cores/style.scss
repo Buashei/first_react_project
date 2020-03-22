@@ -1,0 +1,47 @@
+.cores {
+    h1 {
+        font-size: 2rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+    table {
+        thead {
+            tr {
+                border-bottom: 1px solid rgba(255,255,255,.4);
+                th {
+                    text-align: left;
+                    padding: 0 1rem 1rem 1rem;
+                    p.small {
+                        font-size: .5rem;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                &.dropdownParent {
+                    cursor: pointer;
+                }
+                &.dropdownParent:hover {
+                    background-color: rgba(255,255,255,.4);
+                }
+                td {
+                    vertical-align: top;
+                    padding: 1rem 1rem;
+                    word-wrap: break-word;
+                    &.date {
+                        white-space: pre;
+                    }
+                    &.dropdown {
+                        display:none;
+                        word-break: break-word;
+                        cursor: default;
+                        p{
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

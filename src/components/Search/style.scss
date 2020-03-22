@@ -1,0 +1,89 @@
+.search {
+    display: flex;
+    position: absolute;
+    bottom: 3rem;
+    font-size: 16px;
+
+    button {
+        background: linear-gradient(to bottom, transparent 5%, #4D4D4D21 100%);
+        box-shadow: inset 0px 0px 9px 1px black;
+        border: 1px solid white;
+        color: white;
+        padding: 3rem;
+        height: 8.5rem;
+        cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(to bottom, #4D4D4D21 5%, transparent 100%);
+        }
+    }
+
+    .tab {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+        width: 40vw;
+        height: 8.5rem;
+        border: 1px solid;
+        position: relative;
+
+        select {
+            top: 3rem;
+            left: 3rem;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 2rem;
+
+            option {
+                color: white;
+                background: #0A1121;
+            }
+        }
+    }
+}
+
+.autocomplete {
+    width: 100%;
+    opacity: 0;
+    transition-delay: .3s;
+    transition: all .3s linear;
+
+    .autocomplete__control {
+        background-color: transparent;
+
+        .autocomplete__single-value {
+            color: white;
+        }
+
+        .autocomplete__input {
+            color: white;
+        }
+
+        .autocomplete__placeholder {
+            color: white;
+        }
+    }
+
+    .autocomplete__menu-list {
+        background: #0A1121;
+        border: 1px solid white;
+
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #0A1121;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: hsl(223, 51%, 20%);
+        }
+
+        .autocomplete__option--is-focused {
+            color: black;
+        }
+    }
+}

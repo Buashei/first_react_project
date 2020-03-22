@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+.root {
+    position: relative;
+}
+body {
+    font-size: 16px;
+	color: #fff;
+	background: #0A1121;
+    font-family: 'Noto Sans KR', sans-serif;
+    &::-webkit-scrollbar {
+		width: .5rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #0A1121;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: hsl(223, 51%, 20%);
+	}
+}
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url(../../assets/background.png);
+    background-size: cover;
+    background-position: bottom;
+    padding: 3rem 3rem 0 3rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid rgba(255,255,255,.4);
+        border-bottom: none;
+        position: relative;
+        padding: 0;
+        margin: 0;
+
+        h1 {
+            margin-top: 3rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            text-shadow: 10px 0px rgba(255,255,255,.2);
+        }
+        .time {
+            font-family: 'Space Mono', monospace;
+            color: white;
+            position: absolute;
+            top: 5rem;
+            right: -1rem;
+            writing-mode: vertical-rl;
+            padding: .5rem;
+            background-color: rgba(0,0,0,.6);
+            .big{
+                display:inline-block;
+                font-weight: 700;
+            }
+        }
+    }
+    .info {
+        border: 2px solid rgba(255,255,255,.4);
+        border-top: none;
+        border-bottom: none;
+        padding: 1rem 3rem 1rem 3rem;
+        .about {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            font-weight: 900;
+        }
+        .summary {
+            width: 50%;
+        }
+        .details {
+            margin-bottom: 2rem;
+        }
+        p {
+            line-height: 1.5rem;
+            &.big {
+                font-size: 2rem;
+                margin: 2rem 0;
+                font-weight: 100;
+            }
+            &.time {
+                margin-top: -2.5rem;
+                margin-bottom: 2rem;
+                font-size: .8rem;
+                color: gray;
+            }
+            &.links {
+                margin: 2rem 0;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    border-bottom: 1px solid transparent;
+                    &:hover {
+                        border-bottom: 1px solid white;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+        .wikipediaBtn {
+            padding: .5rem;
+            color: olivedrab;
+            border: 1px solid olivedrab;
+            margin: 3rem 0;
+            text-decoration: none;
+            display: inline-block;
+            &:hover {
+                text-decoration: underline;
+                transition: 1s;
+            }
+        }
+    }
+}
