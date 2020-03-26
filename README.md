@@ -2,6 +2,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Sources](#sources)
+* [Inspiration](#inspiration)
 * [Available Scripts](#available-scripts)
 * [Screenshots](#screenshots)
 
